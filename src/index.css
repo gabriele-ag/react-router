@@ -58,3 +58,14 @@ header {
 .navbar a:hover {
   color: #333333e0;
 }
+
+/* MAIN */
+/* card-ListPost */
+
+.card {
+    padding: 15px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
