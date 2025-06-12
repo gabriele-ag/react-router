@@ -8,15 +8,13 @@ function ListPost() {
     const apiUrl = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts"
 
     useEffect(() => {
-
-
         axios
-        .get(apiUrl)
-        .then((resp) => {
-            const postData = resp.data.slice(0, 11)
-            setNewList(postData)
-            console.log(postData)
-        })
+            .get(apiUrl)
+            .then((resp) => {
+                const postData = resp.data.slice(0, 15)
+                setNewList(postData)
+                console.log(postData)
+            })
     }, [])
 
 
@@ -26,14 +24,14 @@ function ListPost() {
             <h1>List Posts</h1>
             <div>
                 <ul>
-                    {postList.map((curPost, index) => {
+                    {postList.map((curPost, index) => (
                         <li key={index}>
                             <div className="card">
                                 <h3>{curPost.title}</h3>
                                 <p>{curPost.body}</p>
                             </div>
                         </li>
-                    })}
+                    ))}
                 </ul>
             </div>
         </div>
