@@ -1,10 +1,10 @@
-import {Link} from "react-router-dom"
-
 function Home() {
     return (
         <>
             <main>
-                <h1> Home </h1>
+                <div className="container my-p">
+                    <h1> Home </h1>
+                </div>
             </main>
         </>
     )

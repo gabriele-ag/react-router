@@ -17,7 +17,7 @@ function AppHeader() {
     return (
         <header>
             <nav>
-                <ul>
+                <ul className="navbar flex">
                     {linkNav.map((curLink, index) => (
                         <li key= {index}>
                             <NavLink to={curLink.url}>{curLink.title}</NavLink>
