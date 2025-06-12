@@ -12,7 +12,7 @@ function AppHeader() {
     {
         title: "Posts",
         url: "/posts",
-    }]
+    }];
 
     return (
         <header>
@@ -26,9 +26,9 @@ function AppHeader() {
                 </ul>
             </nav>
         </header>
-    )
+    );
 
-}
+};
 
 export default AppHeader
 
