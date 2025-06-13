@@ -18,7 +18,9 @@ function ShowPost() {
                 setPost(resp.data)
             })
             .catch((error) => {
+                if (error.status === 404) {
                 navigate("/not-found")
+                }
             })
 
 
@@ -27,8 +29,11 @@ function ShowPost() {
     return (
         <main>
             <div>
-                <h1>{post.title}</h1>
-                <p>{post.body}</p>
+               {post === null ? (
+                    <h1>Caricamento...</h1>
+                ) : (
+                    <h1>{post.title}</h1>
+                )}
             </div>
         </main>
     )

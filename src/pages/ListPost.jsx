@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import axios from "axios"
 
 
@@ -13,7 +13,7 @@ function ListPost() {
         axios
             .get(apiUrl)
             .then((resp) => {
-                const postData = resp.data.slice(0, 15)
+                const postData = resp.data
                 setNewList(postData)
                 console.log(postData)
             })

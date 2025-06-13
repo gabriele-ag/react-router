@@ -16,9 +16,8 @@ function App() {
           <Route element={<GuestLayout/>}>
             <Route path="/" element={<Home />}/>
             <Route path="/about-us" element={<AboutUs />}/>
-            <Route path="/posts"/>
-              <Route path="" element={<ListPost/>}/>
-              <Route path=":id" element={<ShowPost/>}/>              
+            <Route path="/posts" element={<ListPost/>}/>
+            <Route path="/posts/:id" element={<ShowPost/>}/>              
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
