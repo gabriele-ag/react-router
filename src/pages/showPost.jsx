@@ -32,7 +32,10 @@ function ShowPost() {
                {post === null ? (
                     <h1>Caricamento...</h1>
                 ) : (
-                    <h1>{post.title}</h1>
+                    <div>
+                        <h1>{post.title}</h1>
+                        <p>{post.body}</p>
+                    </div>                 
                 )}
             </div>
         </main>

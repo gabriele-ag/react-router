@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 import axios from "axios"
 
 
@@ -31,7 +31,7 @@ function ListPost() {
                             <div className="card">
                                 <h3>{curPost.title}</h3>
                                 <p>{curPost.body}</p>
-                                <Link>Dettagli</Link>
+                                <Link to={`/posts/${curPost.id}`}>Dettagli</Link>
                             </div>
                         </li>
                     ))}
